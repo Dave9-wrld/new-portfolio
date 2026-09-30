@@ -1,0 +1,27 @@
+{
+  "name": "david-agbor-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "serve out",
+    "format": "prettier --write app components next.config.mjs package.json"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "@fontsource/bricolage-grotesque": "5.3.0",
+    "@fontsource/instrument-serif": "5.3.0",
+    "@fontsource/manrope": "5.3.0",
+    "@fortawesome/fontawesome-free": "7.3.1",
+    "next": "16.3.6",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "serve": "14.2.6"
+  },
+  "devDependencies": {
+    "prettier": "3.9.9"
+  }
+}
