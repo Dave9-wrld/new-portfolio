@@ -1,5 +1,17 @@
 export const projects = [
   {
+    name: "Aero",
+    category: "apps",
+    url: "https://aero-zeta-ruddy.vercel.app/",
+    source: "https://github.com/Dave9-wrld/aero",
+    image: "/images/aero-preview.jpg",
+    badge: "Sandbox demo",
+    type: "Flight Booking App",
+    description:
+      "Search and compare flights, choose seats and bags, and complete a fictional booking with Duffel's test API. Includes keyboard-friendly seat maps, current price checks and booking recovery.",
+    stack: "Next.js · React · TypeScript · Duffel API",
+  },
+  {
     name: "BrightTask",
     category: "apps",
     url: "https://brightedge-company-d6lh.vercel.app/",

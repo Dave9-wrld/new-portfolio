@@ -84,6 +84,17 @@ export default function Projects() {
               <p className="project-type">{project.type}</p>
               <p className="project-description">{project.description}</p>
               <p className="project-stack">{project.stack}</p>
+              {project.source && (
+                <a
+                  className="project-source-link"
+                  href={project.source}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`View ${project.name} source on GitHub`}
+                >
+                  View source on GitHub ↗
+                </a>
+              )}
             </div>
           </article>
         ))}
