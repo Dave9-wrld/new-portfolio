@@ -1,3 +1,5 @@
+import { projects } from "./portfolio-data";
+
 export function About() {
   return (
     <section className="panel about" id="about">
@@ -20,7 +22,7 @@ export function About() {
             <span className="inset-icon">
               <i className="fa-regular fa-folder " aria-hidden="true"></i>
             </span>
-            <strong data-count="6">6</strong>
+            <strong data-count={projects.length}>{projects.length}</strong>
             <span>Selected projects</span>
           </div>
           <div>

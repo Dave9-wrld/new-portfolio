@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { useMotion } from "./MotionProvider";
+import { projects } from "./portfolio-data";
 export default function DeveloperShowcase() {
   const [view, setView] = useState("design");
   const scene = useRef(null);
@@ -170,7 +171,7 @@ export default function DeveloperShowcase() {
         </div>
       </div>
       <a href="#projects" className="scene-note note-work">
-        <strong>06</strong>
+        <strong>{String(projects.length).padStart(2, "0")}</strong>
         <span>
           Projects to
           <br />
