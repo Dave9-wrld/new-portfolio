@@ -532,7 +532,7 @@
   animation-delay: calc(var(--card-index, 0) * 65ms);
 }
 .project-image::after {
-  content: "Explore project ↗";
+  content: "Explore project";
   position: absolute;
   bottom: 12px;
   right: 12px;

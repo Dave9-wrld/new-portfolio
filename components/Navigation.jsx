@@ -93,10 +93,6 @@ export default function Navigation() {
             onClick={() => setOpen((value) => !value)}
           >
             <span>{open ? "Close" : "Menu"}</span>
-            <span className="portfolio-menu-icon" aria-hidden="true">
-              <i />
-              <i />
-            </span>
           </button>
           <div
             className={`portfolio-nav-links${open ? " is-open" : ""}`}
@@ -111,9 +107,6 @@ export default function Navigation() {
                 onClick={() => setOpen(false)}
               >
                 {label}
-                <span className="portfolio-nav-arrow" aria-hidden="true">
-                  ↗
-                </span>
               </a>
             ))}
           </div>
@@ -124,7 +117,7 @@ export default function Navigation() {
         href="#home"
         aria-label="Back to top"
       >
-        ↑
+        Top
       </a>
     </>
   );

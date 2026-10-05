@@ -38,7 +38,7 @@ export function About() {
         <p>
           I'm <strong>David Agbor</strong>, a frontend developer and Computer
           Science student based in Port Harcourt. I enjoy turning ideas into
-          websites that look good and work well — from landing pages to
+          websites that look good and work well, from landing pages to
           dashboards and apps built around live data.
         </p>
         <p>
@@ -47,7 +47,7 @@ export function About() {
           with Python, Django, and PostgreSQL.
         </p>
         <a className="button button-light" href="#contact">
-          Contact Me <span aria-hidden="true">↗</span>
+          Contact Me
         </a>
       </div>
     </section>
@@ -76,11 +76,11 @@ export function Services() {
             Next.js.
           </p>
           <a
-            className="round-link"
+            className="text-link"
             href="#contact"
             aria-label="Enquire about Frontend Development"
           >
-            ↗
+            Enquire
           </a>
         </article>
         <article
@@ -102,11 +102,11 @@ export function Services() {
             home on the web.
           </p>
           <a
-            className="round-link"
+            className="text-link"
             href="#contact"
             aria-label="Enquire about Landing Pages"
           >
-            ↗
+            Enquire
           </a>
         </article>
         <article
@@ -125,11 +125,11 @@ export function Services() {
             live data and APIs.
           </p>
           <a
-            className="round-link"
+            className="text-link"
             href="#contact"
             aria-label="Enquire about Web Applications"
           >
-            ↗
+            Enquire
           </a>
         </article>
         <article
@@ -151,11 +151,11 @@ export function Services() {
             phones, tablets, and desktops.
           </p>
           <a
-            className="round-link"
+            className="text-link"
             href="#contact"
             aria-label="Enquire about Responsive Websites"
           >
-            ↗
+            Enquire
           </a>
         </article>
       </div>
@@ -271,7 +271,7 @@ export function Experience() {
               </h3>
               <p className="company">Loctech · Port Harcourt</p>
             </div>
-            <span className="date">2026 — Present</span>
+            <span className="date">2026 to Present</span>
           </div>
           <ul>
             <li>
@@ -293,7 +293,7 @@ export function Experience() {
               <h3>Freelance Frontend Developer</h3>
               <p className="company">Independent projects</p>
             </div>
-            <span className="date">2024 — Present</span>
+            <span className="date">2024 to Present</span>
           </div>
           <ul>
             <li>
@@ -312,7 +312,7 @@ export function Experience() {
               <h3>BSc Computer Science</h3>
               <p className="company">University of Port Harcourt</p>
             </div>
-            <span className="date">2023 — Present</span>
+            <span className="date">2023 to Present</span>
           </div>
           <ul>
             <li>

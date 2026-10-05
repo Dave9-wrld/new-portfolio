@@ -72,13 +72,13 @@ export default function Projects() {
               <div className="project-title-row">
                 <h3>{project.name}</h3>
                 <a
-                  className="round-link"
+                  className="text-link"
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={`Visit ${project.name}`}
                 >
-                  ↗
+                  View
                 </a>
               </div>
               <p className="project-type">{project.type}</p>
@@ -92,7 +92,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                   aria-label={`View ${project.name} source on GitHub`}
                 >
-                  View source on GitHub ↗
+                  View source on GitHub
                 </a>
               )}
             </div>

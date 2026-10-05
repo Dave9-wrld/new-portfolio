@@ -95,7 +95,6 @@ export default function ContactForm() {
           disabled={status.state === "sending"}
         >
           {status.state === "sending" ? "Sending…" : "Send Message"}{" "}
-          <span aria-hidden="true">↗</span>
         </button>
         <p
           className={`form-status ${status.state}`}

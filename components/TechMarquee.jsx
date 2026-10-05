@@ -14,7 +14,6 @@ export default function TechMarquee() {
     <div className="trusted enter" style={{ "--delay": ".6s" }}>
       <div className="trusted-label">
         <p>Tech I work with</p>
-        <span className="trusted-line" aria-hidden="true" />
       </div>
       <div className="marquee">
         <div className="marquee-track">

@@ -72,7 +72,7 @@ export default function DeveloperShowcase() {
             aria-pressed={view === "design"}
             onClick={() => setView("design")}
           >
-            The interface <span aria-hidden="true">↗</span>
+            The interface
           </button>
           <button
             type="button"
@@ -90,7 +90,6 @@ export default function DeveloperShowcase() {
                   ✳
                 </span>
                 <span>AN IDEA, REIMAGINED.</span>
-                <span aria-hidden="true">↗</span>
               </div>
               <div className="mini-composition">
                 <div>
@@ -102,9 +101,7 @@ export default function DeveloperShowcase() {
                     <br />
                     <em>mean something.</em>
                   </p>
-                  <span className="mini-pill">
-                    Thoughtfully built <span aria-hidden="true">↗</span>
-                  </span>
+                  <span className="mini-pill">Thoughtfully built</span>
                 </div>
                 <div className="sculpture" aria-hidden="true">
                   <div className="sculpture-ring ring-a" />
@@ -117,11 +114,6 @@ export default function DeveloperShowcase() {
               </div>
               <div className="mini-bottom">
                 <span>01 / IMAGINE</span>
-                <div aria-hidden="true">
-                  <i />
-                  <i />
-                  <i />
-                </div>
                 <span>02 / CREATE</span>
               </div>
             </div>
@@ -157,7 +149,7 @@ export default function DeveloperShowcase() {
         </div>
         <div className="studio-footer">
           <span>
-            <span className="live-dot" /> CURIOSITY → CODE → CRAFT
+            <span className="live-dot" /> CURIOSITY · CODE · CRAFT
           </span>
           <span>Made by David</span>
         </div>
@@ -177,11 +169,9 @@ export default function DeveloperShowcase() {
           <br />
           explore
         </span>
-        <span aria-hidden="true">↗</span>
       </a>
       <div className="scene-caption">
-        <span aria-hidden="true">↳</span> A little design. A little code. A lot
-        of possibility.
+        A little design. A little code. A lot of possibility.
       </div>
     </div>
   );

@@ -869,14 +869,6 @@ select:focus-visible {
   padding: 22px 18px;
   position: relative;
 }
-.process-card:not(:last-child)::after {
-  content: "⟶";
-  position: absolute;
-  right: -33px;
-  top: 44%;
-  font-size: 1.7rem;
-  color: #b5a2e7;
-}
 .process-card > div {
   display: flex;
   gap: 12px;
@@ -1975,5 +1967,46 @@ footer > div a {
   }
 }
 
-.project-source-link { display: inline-block; margin-top: 12px; color: inherit; font-size: .85rem; font-weight: 700; text-decoration: underline; text-underline-offset: 4px; }
-.project-source-link:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; border-radius: 2px; }
+.project-source-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.project-source-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 5px;
+  border-radius: 2px;
+}
+
+/* Clear text actions replace decorative arrow controls. */
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: #725cb4;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.text-link:hover {
+  color: var(--ink);
+}
+.text-link:focus-visible {
+  outline: 2px solid #725cb4;
+  outline-offset: 4px;
+}
+.service-card .text-link {
+  margin-top: 12px;
+}
+.project-title-row .text-link {
+  flex-shrink: 0;
+}
+.back-to-top {
+  font-size: 0.7rem;
+  font-weight: 700;
+}

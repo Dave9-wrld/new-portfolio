@@ -14,9 +14,9 @@ import "./creative.css";
 import "./navigation.css";
 
 export const metadata = {
-  title: "David Agbor — Frontend Developer",
+  title: "David Agbor | Frontend Developer",
   description:
-    "David Agbor — frontend developer and Computer Science student in Port Harcourt. Explore my web development projects and the tools I work with.",
+    "David Agbor | frontend developer and Computer Science student in Port Harcourt. Explore my web development projects and the tools I work with.",
 };
 
 export const viewport = {

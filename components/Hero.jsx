@@ -20,15 +20,15 @@ export default function Hero() {
         </p>
         <p className="intro enter" style={{ "--delay": ".4s" }}>
           I build responsive websites and web apps with React, Next.js, and a
-          careful eye for the details — bringing ideas to life, one thoughtful
+          careful eye for the details, bringing ideas to life, one thoughtful
           interface at a time.
         </p>
         <div className="hero-actions enter" style={{ "--delay": ".5s" }}>
           <a className="button button-dark" href="#projects">
-            View My Work <span aria-hidden="true">↗</span>
+            View My Work
           </a>
           <a className="button button-light" href="#contact">
-            Let&apos;s Talk <span aria-hidden="true">↗</span>
+            Let&apos;s Talk
           </a>
         </div>
         <TechMarquee />
