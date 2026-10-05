@@ -11,6 +11,7 @@ import "@fontsource/instrument-serif/400-italic.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./globals.css";
 import "./creative.css";
+import "./navigation.css";
 
 export const metadata = {
   title: "David Agbor — Frontend Developer",

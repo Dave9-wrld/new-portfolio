@@ -3,19 +3,15 @@
 import { useEffect, useRef, useState } from "react";
 
 const links = [
-  "Home",
-  "About",
-  "Services",
-  "Projects",
-  "Experience",
-  "Process",
-  "Contact",
+  { label: "About", id: "about" },
+  { label: "Work", id: "projects" },
+  { label: "Experience", id: "experience" },
+  { label: "Contact", id: "contact" },
 ];
 
 export default function Navigation() {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("home");
-  const [progress, setProgress] = useState(0);
   const [showTop, setShowTop] = useState(false);
   const nav = useRef(null);
   const toggle = useRef(null);
@@ -23,14 +19,10 @@ export default function Navigation() {
   useEffect(() => {
     let frame = 0;
     const update = () => {
-      const height = document.documentElement.scrollHeight - window.innerHeight;
-      setProgress(
-        height > 0 ? Math.min(1, Math.max(0, window.scrollY / height)) : 0,
-      );
       setShowTop(window.scrollY > 420);
       let current = "home";
-      for (const label of links) {
-        const section = document.getElementById(label.toLowerCase());
+      for (const { id } of links) {
+        const section = document.getElementById(id);
         if (section?.getBoundingClientRect().top <= 150) current = section.id;
       }
       setActive(current);
@@ -40,7 +32,7 @@ export default function Navigation() {
       if (!frame) frame = requestAnimationFrame(update);
     };
     const onResize = () => {
-      if (window.innerWidth > 900) setOpen(false);
+      if (window.innerWidth > 760) setOpen(false);
       onScroll();
     };
     update();
@@ -79,55 +71,52 @@ export default function Navigation() {
 
   return (
     <>
-      <div
-        className="reading-progress"
-        aria-hidden="true"
-        style={{ transform: `scaleX(${progress})` }}
-      />
-      <header className="site-header">
-        <nav ref={nav} className="nav" aria-label="Main navigation">
-          <a className="brand" href="#home" onClick={() => setOpen(false)}>
-            <span className="brand-mark" aria-hidden="true">
+      <header className="portfolio-header">
+        <nav ref={nav} className="portfolio-nav" aria-label="Main navigation">
+          <a
+            className="portfolio-brand"
+            href="#home"
+            onClick={() => setOpen(false)}
+          >
+            <span className="portfolio-monogram" aria-hidden="true">
               d<span>.</span>
             </span>
-            <span>
-              David Agbor<small>Frontend Developer</small>
-            </span>
+            <span>David Agbor</span>
           </a>
           <button
             ref={toggle}
             type="button"
-            className="menu-toggle"
+            className="portfolio-menu-toggle"
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
             aria-controls="navigation"
             onClick={() => setOpen((value) => !value)}
           >
-            <span />
-            <span />
-            <span />
+            <span>{open ? "Close" : "Menu"}</span>
+            <span className="portfolio-menu-icon" aria-hidden="true">
+              <i />
+              <i />
+            </span>
           </button>
-          <div className={`nav-links${open ? " open" : ""}`} id="navigation">
-            {links.map((label) => (
+          <div
+            className={`portfolio-nav-links${open ? " is-open" : ""}`}
+            id="navigation"
+          >
+            {links.map(({ label, id }) => (
               <a
                 key={label}
-                href={`#${label.toLowerCase()}`}
-                className={active === label.toLowerCase() ? "active" : ""}
-                aria-current={
-                  active === label.toLowerCase() ? "location" : undefined
-                }
+                href={`#${id}`}
+                className={`${id === "contact" ? "portfolio-contact-link " : ""}${active === id ? "is-active" : ""}`}
+                aria-current={active === id ? "location" : undefined}
                 onClick={() => setOpen(false)}
               >
                 {label}
-                <span className="mobile-nav-arrow" aria-hidden="true">
+                <span className="portfolio-nav-arrow" aria-hidden="true">
                   ↗
                 </span>
               </a>
             ))}
           </div>
-          <a className="button button-light nav-cta" href="#contact">
-            Let&apos;s Talk <span aria-hidden="true">↗</span>
-          </a>
         </nav>
       </header>
       <a

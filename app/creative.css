@@ -556,33 +556,8 @@
 .project-image:focus-visible {
   outline-offset: -4px;
 }
-.site-motion-control {
-  position: fixed;
-  bottom: calc(18px + env(safe-area-inset-bottom));
-  left: max(18px, env(safe-area-inset-left));
-  z-index: 31;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  border: 1px solid #ffffffc9;
-  border-radius: 30px;
-  min-height: 44px;
-  padding: 8px 13px;
-  font-size: 0.65rem;
-  font-weight: 700;
-  color: #716281;
-  background: #f6f5fbe8;
-  backdrop-filter: blur(14px);
-  box-shadow: 0 4px 16px #77708124;
-}
-.site-motion-control > span:first-child {
-  font-size: 0.7rem;
-}
-.site-motion-control:disabled {
-  cursor: default;
-}
 footer {
-  padding-bottom: 82px;
+  padding-bottom: 32px;
 }
 .nav-links a {
   position: relative;
@@ -917,22 +892,8 @@ footer {
   .service-card {
     min-height: 0;
   }
-  .site-motion-control {
-    top: 14px;
-    bottom: auto;
-    left: auto;
-    right: calc(82px + env(safe-area-inset-right));
-    width: 44px;
-    height: 46px;
-    padding: 0;
-    justify-content: center;
-    z-index: 51;
-  }
-  .site-motion-control > span:last-child {
-    display: none;
-  }
   footer {
-    padding-bottom: calc(82px + env(safe-area-inset-bottom));
+    padding-bottom: calc(32px + env(safe-area-inset-bottom));
   }
   .project-image::after {
     display: none;
