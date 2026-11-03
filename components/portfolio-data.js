@@ -3,24 +3,22 @@ export const projects = [
     name: "Dave University Academic Portal",
     category: "apps",
     url: "https://school-frontend-henna-nine.vercel.app/login",
-    source: "https://github.com/Dave9-wrld/school-project",
     image: "/images/dave-university-portal.webp",
     badge: "SIWES project",
     type: "Academic Management System",
     description:
-      "Administrators assign courses and classes, lecturers record assessment and exam scores, and students view their own results. Role-based access keeps each workspace focused on the tasks its users can perform.",
+      "An academic records portal built around role-based access control. Administrators manage course assignments, lecturers enter and revise grades for the courses they teach, and students can view only their own results.",
     stack: "Next.js · TypeScript · Django REST Framework · shadcn/ui",
   },
   {
     name: "Aero",
     category: "apps",
     url: "https://aero-zeta-ruddy.vercel.app/",
-    source: "https://github.com/Dave9-wrld/aero",
     image: "/images/aero-preview.jpg",
     badge: "Sandbox demo",
     type: "Flight Booking App",
     description:
-      "Search and compare flights, choose seats and bags, and complete a fictional booking with Duffel's test API. Includes keyboard-friendly seat maps, current price checks and booking recovery.",
+      "A flight booking application built on the Duffel test API. Travelers compare fares, select seats and baggage, and confirm a simulated reservation. The app rechecks pricing before booking and supports keyboard navigation through seat maps.",
     stack: "Next.js · React · TypeScript · Duffel API",
   },
   {
