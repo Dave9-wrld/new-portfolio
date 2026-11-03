@@ -1,5 +1,17 @@
 export const projects = [
   {
+    name: "Dave University Academic Portal",
+    category: "apps",
+    url: "https://school-frontend-henna-nine.vercel.app/login",
+    source: "https://github.com/Dave9-wrld/school-project",
+    image: "/images/dave-university-portal.webp",
+    badge: "SIWES project",
+    type: "Academic Management System",
+    description:
+      "Administrators assign courses and classes, lecturers record assessment and exam scores, and students view their own results. Role-based access keeps each workspace focused on the tasks its users can perform.",
+    stack: "Next.js · TypeScript · Django REST Framework · shadcn/ui",
+  },
+  {
     name: "Aero",
     category: "apps",
     url: "https://aero-zeta-ruddy.vercel.app/",
